@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "channel": "../../components/channel/channel",
+    "list": "../../components/list/list"
+  },
+  "navigationBarTitleText": "书城"
+}

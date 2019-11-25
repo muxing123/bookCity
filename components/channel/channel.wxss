@@ -1,0 +1,25 @@
+/* components/channel/channel.wxss */
+
+.content {
+  border-top: 2rpx solid #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content .small {
+  width: 33%;
+  text-align: center;
+  padding: 16rpx 0;
+  border-right: 2rpx solid #f2f2f2;
+  border-bottom: 2rpx solid #f2f2f2;
+}
+
+.content .small .name {
+  font-weight: bold;
+  padding-bottom: 10rpx;
+}
+
+.content .small .bookCount {
+  color: #969696;
+  font-size: 26rpx;
+}

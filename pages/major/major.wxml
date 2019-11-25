@@ -1,0 +1,27 @@
+<!--pages/major/major.wxml-->
+<view class="fixed">
+  <view class="top">
+    <view wx:for="{{typeList}}" wx:key="{{index}}" class="item {{num === index ? 'select' : ''}}" bindtap="setNum" data-index="{{index}}" data-id="{{item.id}}">{{item.name}}</view>
+  </view>
+  <view class="minor">
+    <scroll-view class="scroll-view_H" scroll-x="true">
+      <view class="item {{miNum === 10 ? 'select' : ''}}" bindtap="setmiNum" data-index="{{10}}">全部</view>
+      <view wx:for="{{minsList}}" wx:key="{{index}}" class="item {{miNum === index ? 'select' : ''}}" bindtap="setmiNum" data-index="{{index}}" data-item="{{item}}">{{item}}</view>
+    </scroll-view>
+  </view>
+</view>
+<view class="books">
+  <scroll-view scroll-y="true" class="scrollset">
+    <view wx:for="{{books}}" wx:key="{{index}}" class="item" bindtap="goTo" data-id="{{item._id}}" data-title="{{item.title}}">
+      <image src="{{'https://statics.zhuishushenqi.com'+item.cover}}" class="cover"></image>
+      <view class="right">
+        <view class="title">{{item.title}}</view>
+        <view class="author">{{item.author}}</view>
+        <view class="shortIntro">{{item.shortIntro}}</view>
+        <view class="tags">
+          <view wx:for="{{item.tags}}" wx:if="{{idx < 3}}" wx:for-item="itemTags" wx:for-index="idx" wx:key="{{idx}}" class="itemTags {{idx === 0 ? 'yellow' : (idx ===1 ? 'blue' : 'red')}}">{{itemTags}}</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

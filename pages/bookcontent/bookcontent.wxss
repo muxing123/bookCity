@@ -1,0 +1,39 @@
+/* pages/bookcontent/bookcontent.wxss */
+@import "../../lib/wxParse/wxParse.wxss";
+.outer {
+  padding: 0 30rpx;
+}
+.outer .title {
+  font-weight: bold;
+  padding: 30rpx 0;
+  border-bottom: 2rpx solid #f2f2f2; 
+}
+.outer .content {
+  text-indent: 2em;
+}
+.outer .content .wxParse-p {
+  padding: 30rpx;
+} 
+.outer .button {
+  display: flex;
+  justify-content: center;
+}
+.outer .button .previous {
+  text-align: center;
+  background: #FF334C;
+  color: white;
+  width: 180rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-right: 8rpx;
+  border-radius: 40rpx 0 0 40rpx;
+}
+.outer .button .next {
+  text-align: center;
+  background: #FF334C;
+  color: white;
+  width: 180rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 0 40rpx 40rpx 0;
+}

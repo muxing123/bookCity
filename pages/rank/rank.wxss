@@ -1,0 +1,71 @@
+/* pages/rank/rank.wxss */
+.nav {
+  display: flex;
+  background: #ddd;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.nav .dayRank {
+  flex: 1;
+  text-align: center;
+}
+
+.nav .monthRank {
+  flex: 1;
+  text-align: center;
+}
+.nav .totalRank {
+  flex: 1;
+  text-align: center;
+}
+.select {
+  display: inline-block;
+  color: red;
+  border-bottom: 6rpx solid red;
+}
+.books .scrollset {
+  height: 1000rpx;
+}
+.books .item {
+  display: flex;
+  padding: 30rpx;
+  border-bottom: 2rpx solid #f2f2f2;
+}
+.books .item .cover {
+  width: 200rpx;
+  height: 300rpx;
+}
+.books .item .right {
+  width: 65%;
+  padding-left: 30rpx;
+  position: relative;
+}
+.books .item .right .title {
+  font-weight: bold;
+}
+.books .item .right .author {
+  font-size: 30rpx;
+  color: #969696;
+  padding: 20rpx 0;
+}
+.books .item .right .shortIntro {
+  font-size: 26rpx;
+  color: #969696;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+}
+.books .item .right .tags {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+.books .item .right .tags .itemTags {
+  margin-right: 20rpx;
+  font-size: 30rpx;
+  border-radius: 8rpx;
+  padding: 10rpx;
+}

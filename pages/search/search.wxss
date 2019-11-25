@@ -1,0 +1,94 @@
+/* pages/search/search.wxss */
+.outer {
+  padding: 30rpx;
+  position: relative;
+}
+.outer .search {
+  background: #E5E7E9;
+  padding: 12rpx 0;
+  border-radius: 20rpx;
+  text-align: center;
+  font-size: 36rpx;
+}
+.place {
+  text-align: center;
+  font-size: 36rpx; 
+}
+.outer .icon-search {
+  position: absolute;
+  top: 42rpx;
+  left: 180rpx;
+}
+.outer .top{
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  font-size: 34rpx;
+  margin-top: 40rpx;
+}
+.outer .top .right{
+  color: #FF4C33;
+}
+.outer .top .right .img {
+  width: 50rpx;
+  height: 50rpx;
+}
+.outer .top .right .cancel {
+  margin-right: 6rpx;
+}
+.outer .top .right .text {
+  position: relative;
+  bottom: 12rpx;
+}
+.outer .hotWords {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.outer .hotWords .item{
+  border: 2rpx solid #f2f2f2;
+  padding: 20rpx;
+  margin: 0 20rpx 20rpx 0;
+  text-align: center;
+  border-radius: 20rpx;
+  color: white;
+}
+.outer .books .scrollset {
+  height: 1000rpx;
+}
+.outer .books .item {
+  display: flex;
+  padding: 30rpx;
+  border-bottom: 2rpx solid #f2f2f2;
+}
+.outer .books .item .cover {
+  width: 200rpx;
+  height: 300rpx;
+}
+.outer .books .item .right {
+  width: 65%;
+  padding-left: 30rpx;
+  position: relative;
+}
+.outer .books .item .right .title {
+  font-weight: bold;
+}
+.outer .books .item .right .author {
+  font-size: 30rpx;
+  color: #969696;
+  padding: 20rpx 0;
+}
+.outer .books .item .right .shortIntro {
+  font-size: 26rpx;
+  color: #969696;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+}
+.outer .history .item {
+  padding: 16rpx;
+  border-bottom: 2rpx solid #f2f2f2;
+  font-size: 30rpx;
+}

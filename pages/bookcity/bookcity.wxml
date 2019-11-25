@@ -1,0 +1,32 @@
+<view class="nav">
+  <view class="sort" bindtap="setNum" data-num="{{0}}">
+    <text class="{{num === 0 ? 'select' : ''}}">分类</text>
+  </view>
+  <view class="ranking" bindtap="setNum" data-num="{{1}}">
+    <text class="{{num === 1 ? 'select' : ''}}">排行</text>
+  </view>
+</view>
+<view wx:if='{{num === 0}}'>
+  <view class="plate">
+    <view class="name">男生</view>
+    <channel obj='{{male}}'></channel>
+  </view>
+  <view class="plate">
+    <view class="name">女生</view>
+    <channel obj='{{female}}'></channel>
+  </view>
+  <view class="plate">
+    <view class="name">出版</view>
+    <channel obj='{{press}}'></channel>
+  </view>
+</view>
+<view wx:if='{{num === 1}}'>
+  <view class="plate">
+    <view class="name">男生</view>
+    <list list='{{maleList}}'></list>
+  </view>
+  <view class="plate">
+    <view class="name">女生</view>
+    <list list='{{femaleList}}'></list>
+  </view>
+</view>

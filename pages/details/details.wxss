@@ -1,0 +1,191 @@
+/* pages/details/details.wxss */
+.bgcolor {
+  height: 200rpx;
+  background: #f45;
+}
+.cover {
+  display: block;
+  width: 280rpx;
+  height: 400rpx;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -120rpx;
+  box-shadow:0 0 10rpx #808080;
+}
+.height {
+  height: 200rpx;
+}
+.title {
+  text-align: center;
+  font-weight: bold;
+  padding: 20rpx 0;
+}
+.author {
+  text-align: center;
+  font-size: 32rpx;
+  color: #808080;
+  padding-bottom: 80rpx;
+}
+.bg {
+  background: #f2f2f2;
+  position: relative;
+  padding-top: 20rpx; 
+}
+.bg .button {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: -34rpx;
+}
+.bg .button .read{
+  text-align: center;
+  width: 240rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  color: white; 
+  background: #f45;
+  margin-left: 40rpx;
+}
+.bg .button .addshelf {
+  text-align: center;
+  width: 240rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  border: 2rpx solid #DDD;
+  color: #808080;
+  background: white;
+  margin-right: 40rpx;
+}
+.bg .score {
+  display: flex;
+  margin-top: 60rpx;
+  justify-content: center; 
+}
+.bg .score .star .img{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+}
+.bg .lastChapter {
+  font-size: 30rpx;
+  text-align: center;
+  padding: 20rpx 0;
+}
+.bg .lastChapter .text {
+  padding-left: 20rpx;
+  color: darkcyan;
+}
+.bg .inner {
+  padding: 30rpx;
+}
+.bg .inner .nav {
+  display: flex;
+  background: white;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #969696;
+}
+
+.bg .inner .nav .sort {
+  width: 50%;
+  text-align: center;
+}
+
+.bg .inner .nav .ranking {
+  width: 50%;
+  text-align: center;
+}
+
+.select {
+  display: inline-block;
+  color: red;
+  border-bottom: 6rpx solid red;
+}
+.bg .inner .details {
+  background: white;
+  border-top: 4rpx solid #f2f2f2;
+  padding: 30rpx;
+  font-size: 30rpx;
+  color: #969696;
+}
+.bg .inner .details .scrollset{
+  height: 600rpx;
+}
+.bg .inner .details .scrollset .catalog{
+  text-align: center;
+  background: #f2f2f2;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 30rpx 0;
+}
+.bg .inner .details .scrollset .catalog .img {
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  top: 10rpx;
+  margin-right: 6rpx;
+}
+.bg .inner .details .scrollset .recommend .top{
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  font-size: 34rpx;
+}
+.bg .inner .details .scrollset .recommend .top .right{
+  color: #FF4C33;
+}
+.bg .inner .details .scrollset .recommend .top .right .img {
+  width: 50rpx;
+  height: 50rpx;
+}
+.bg .inner .details .scrollset .recommend .top .right .text {
+  position: relative;
+  bottom: 12rpx;
+}
+.bg .inner .details .scrollset .recommend .books {
+  display: flex;
+}
+.bg .inner .details .scrollset .recommend .books .item {
+  flex: 1;
+}
+.bg .inner .details .scrollset .recommend .books .item .img {
+  width: 90%;
+  height: 280rpx;
+}
+.bg .inner .details .scrollset .recommend .books .item .text {
+  text-align: center;
+}
+.bg .inner .evaluate {
+  background: white;
+  border-top: 4rpx solid #f2f2f2;
+  padding: 30rpx;
+  font-size: 30rpx;
+  color: #969696;
+}
+.bg .inner .evaluate .scrollset {
+  height: 600rpx;
+}
+.bg .inner .evaluate .scrollset .item {
+  display: flex;
+  padding: 20rpx 0;
+}
+.bg .inner .evaluate .scrollset .item .left{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.bg .inner .evaluate .scrollset .item .right {
+  padding-left: 20rpx;
+  width: 80%;
+}
+.bg .inner .evaluate .scrollset .item .right .nickname {
+  color: #FF6E33;
+  font-size: 34rpx;
+}
+.bg .inner .evaluate .scrollset .item .right .content {
+  padding-top: 10rpx; 
+}

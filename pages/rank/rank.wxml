@@ -1,0 +1,24 @@
+<!--pages/rank/rank.wxml-->
+<view class="nav" wx:if='{{month !=="undefined"}}'>
+  <view class="dayRank" bindtap="setNum" data-num="{{0}}" data-id="{{id}}">
+    <text class="{{num === 0 ? 'select' : ''}}">周榜</text>
+  </view>
+  <view class="monthRank" bindtap="setNum" data-num="{{1}}" data-id="{{month}}">
+    <text class="{{num === 1 ? 'select' : ''}}">月榜</text>
+  </view>
+  <view class="totalRank" bindtap="setNum" data-num="{{2}}" data-id="{{total}}">
+    <text class="{{num === 2 ? 'select' : ''}}">总榜</text>
+  </view>
+</view>
+<view class="books">
+  <scroll-view scroll-y="true" class="scrollset">
+    <view wx:for="{{idList}}" wx:key="{{index}}" class="item" bindtap="goTo" data-id="{{item._id}}" data-title="{{item.title}}">
+      <image src="{{'https://statics.zhuishushenqi.com'+item.cover}}" class="cover"></image>
+      <view class="right">
+        <view class="title">{{item.title}}</view>
+        <view class="author">{{item.author}}</view>
+        <view class="shortIntro">{{item.shortIntro}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,22 @@
+<view class="top">
+  <view class="left">
+    <image src="../../images/hook.png" class="hook" wx:if="{{block}}" bindtap="play"></image>
+    <image src="../../images/edit.png" class="hook" wx:else bindtap="play"></image>
+  </view>
+  <view class="right">
+    <view class="help" bindtap="goTo">帮助</view>
+    <image src="../../images/refresh.png" class="refresh" bindtap="refresh"></image>
+  </view>
+</view>
+<view>
+  <view wx:if="{{bookList.length > 0}}" class="books">
+    <view wx:for="{{bookList}}" class="item" wx:key="{{index}}" bindtap="goRead" data-id="{{item.book._id}}" data-title="{{item.book.title}}">
+      <image src="{{'https://statics.zhuishushenqi.com'+item.book.cover}}" class="img"></image>
+      <view class="box" wx:if="{{block}}" catchtap="del" data-index="{{index}}">
+        <image src="../../images/clear.png" class="clear"></image>
+      </view>
+      <view class="title">{{item.book.title}}</view>
+    </view>
+  </view>
+  <view class="tips" wx:else>主人还没收藏书籍哦，请去书城收藏吧！</view>
+</view>

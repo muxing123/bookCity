@@ -1,0 +1,33 @@
+/* pages/help/help.wxss */
+
+.content {
+  padding: 10rpx 20rpx;
+}
+
+.content .summary {
+  font-weight: bold;
+  padding-bottom: 20rpx;
+}
+
+.content .title {
+  padding-bottom: 20rpx;
+  font-size: 32rpx;
+}
+
+.content .replay {
+  text-indent: 2em;
+  line-height: 50rpx;
+  font-size: 26rpx;
+  color: #8a8a8a;
+  border-top: 2rpx solid #f2f2f2;
+  border-bottom: 2rpx solid #f2f2f2;
+  margin-bottom: 20rpx;
+}
+
+.replayLast {
+  text-indent: 2em;
+  line-height: 50rpx;
+  font-size: 26rpx;
+  color: #8a8a8a;
+  border-top: 2rpx solid #f2f2f2;
+}

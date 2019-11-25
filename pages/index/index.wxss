@@ -1,0 +1,66 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 40rpx 20rpx;
+}
+.top .left {
+  position: relative;
+  top: 10rpx;
+}
+.top .left .hook {
+  width: 50rpx;
+  height: 50rpx;
+}
+.top .right {
+  display: flex;
+}
+.top .right .help {
+  width: 120rpx;
+  height: 60rpx;
+  margin-right: 40rpx;
+  text-align: center;
+  border:2rpx solid #8a8a8a;
+  border-radius: 12rpx;
+  color: #8a8a8a;
+}
+.top .right .refresh {
+  width: 60rpx;
+  height: 60rpx;
+}
+.tips {
+  text-align: center;
+  margin-top: 40rpx;
+  color: #8a8a8a;
+}
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 30rpx 30rpx;
+}
+.books .item {
+  width: 220rpx;
+  margin-bottom: 30rpx;
+  position: relative;
+  margin-right: 14rpx;
+}
+.books .item .img {
+  width: 220rpx;
+  height: 320rpx;
+}
+.books .item .box {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background: #8a8a8a;
+  position: absolute;
+  top: 4rpx;
+  right: 4rpx;
+}
+.books .item .box .clear {
+  width: 40rpx;
+  height: 40rpx;
+}
+.books .item .title {
+  text-align: center;
+  font-size: 34rpx;
+}

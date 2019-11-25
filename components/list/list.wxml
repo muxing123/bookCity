@@ -1,0 +1,7 @@
+<!--components/list/list.wxml-->
+<view class="content">
+  <view wx:for='{{list}}' wx:key='{{index}}' class="small" wx:if="{{index < 6}}" bindtap="goTo" data-title="{{item.title}}" data-id="{{item._id}}" data-month="{{item.monthRank}}" data-total="{{item.totalRank}}">
+    <image src="{{'https://statics.zhuishushenqi.com'+item.cover}}" class="heat"></image>
+    <view class="title">{{item.title}}</view>
+  </view>
+</view>

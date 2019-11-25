@@ -1,0 +1,12 @@
+<!--pages/bookcontent/bookcontent.wxml-->
+<import src="../../lib/wxParse/wxParse.wxml" />
+<view class="outer">
+  <view class="title">{{chapters.title}}</view>
+  <view class="content">
+    <template is="wxParse" data="{{wxParseData:courseDetail.nodes}}" />
+  </view>
+  <view class="button">
+    <view class="previous" bindtap="redNum">上一章</view>
+    <view class="next" bindtap="addNum">下一章</view>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+/* components/list/list.wxss */
+.content {
+  padding-left: 30rpx; 
+}
+.content .heat {
+  width: 60rpx;
+  height: 60rpx;
+  position: relative;
+  top: 22rpx;
+  margin-right: 20rpx;
+}
+.content .small {
+  display: flex;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 2rpx solid #f2f2f2;
+}

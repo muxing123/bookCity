@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/bookcity/bookcity",
+    "pages/search/search",
+    "pages/help/help",
+    "pages/major/major",
+    "pages/rank/rank",
+    "pages/details/details",
+    "pages/bookcontent/bookcontent",
+    "pages/catalog/catalog"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f45",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "书架",
+        "iconPath": "images/bookshelf.png",
+        "selectedIconPath": "images/bookshelf-sel.png"
+      },
+      {
+        "pagePath": "pages/bookcity/bookcity",
+        "text": "书城",
+        "iconPath": "images/bookCity.png",
+        "selectedIconPath": "images/bookCity-sel.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search-sel.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

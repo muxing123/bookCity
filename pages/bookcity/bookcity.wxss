@@ -1,0 +1,30 @@
+/* pages/bookcity/bookcity.wxss */
+
+.nav {
+  display: flex;
+  background: #ddd;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.nav .sort {
+  width: 50%;
+  text-align: center;
+}
+
+.nav .ranking {
+  width: 50%;
+  text-align: center;
+}
+
+.select {
+  display: inline-block;
+  border-bottom: 6rpx solid red;
+}
+
+.plate .name {
+  height: 100rpx;
+  line-height: 100rpx;
+  padding-left: 20rpx;
+  color: #969696;
+}

@@ -1,0 +1,3 @@
+<!--pages/catalog/catalog.wxml-->
+<view wx:for="{{chapters}}" wx:ke="{{index}}" class="item" bindtap="goContent" data-index="{{index}}" data-id="{{id}}" data-title="{{title}}">{{item.title}}</view>
+

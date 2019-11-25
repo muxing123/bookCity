@@ -1,0 +1,67 @@
+<!--pages/details/details.wxml-->
+<view class="bgcolor"></view>
+<image lazy-load="{{true}}" src="{{'https://statics.zhuishushenqi.com'+data.cover}}" class="cover" bindtap="preview"></image>
+<view class="height"></view>
+<view class="title">{{data.title}}</view>
+<view class="author">{{data.author}}</view>
+<view class="bg">
+  <view class="button">
+    <view class="read" bindtap="goTo" data-id="{{data._id}}" data-title="{{data.title}}">开始阅读</view>
+    <view class="addshelf" bindtap="addBook">
+      <text wx:if="{{add}}">已加入书架</text>
+      <text wx:else>加入书架</text>
+    </view>
+  </view>
+  <view class="score">
+    <view class="star" wx:for="{{starList}}" wx:key="{{index}}">
+      <image src="../../images/star-sel.png" class="img" wx:if="{{item.sel}}"></image>
+      <image src="../../images/star.png" class="img" wx:else></image>
+    </view>
+  </view>
+  <view class="lastChapter">更新至
+    <text class="text">{{data.lastChapter}}</text>
+  </view>
+  <view class="inner">
+    <view class="nav">
+      <view class="sort" bindtap="setNum" data-num="{{0}}">
+        <text class="{{num === 0 ? 'select' : ''}}">详情</text>
+      </view>
+      <view class="ranking" bindtap="setNum" data-num="{{1}}">
+        <text class="{{num === 1 ? 'select' : ''}}">评价({{docs.length}})</text>
+      </view>
+    </view>
+    <view class="details" wx:if="{{num === 0}}">
+      <scroll-view scroll-y="true" class="scrollset">
+        <view>简介：{{data.longIntro}}</view>
+        <view class="catalog" bindtap="goCatalog" data-id="{{data._id}}" data-title="{{data.title}}">
+          <image src="../../images/catalog.png" class="img"></image>总目录（{{data.chaptersCount}}章）</view>
+        <view class="recommend">
+          <view class="top">
+            <view class="left">看过这本书的人还在看</view>
+            <view class="right" bindtap="getrelatedRecommendedBooks">
+              <image src="../../images/refresh-color.png" class="img"></image>
+              <text class="text">换一换</text>
+            </view>
+          </view>
+          <view class="books">
+            <view wx:for="{{books}}" wx:key="{{index}}" class="item">
+              <image src="{{'https://statics.zhuishushenqi.com'+item.cover}}" class="img"></image>
+              <view class="text">{{item.title}}</view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="evaluate" wx:if="{{num === 1}}">
+      <scroll-view scroll-y="true" class="scrollset">
+        <view class="item" wx:for="{{docs}}" wx:key="{{index}}">
+          <image src="{{'https://statics.zhuishushenqi.com'+item.author.avatar}}" class="left"></image>
+          <view class="right">
+            <view class="nickname">{{item.author.nickname}}</view>
+            <view class="content">{{item.content}}</view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

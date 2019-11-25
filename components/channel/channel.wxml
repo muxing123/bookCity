@@ -1,0 +1,7 @@
+<!--components/channel/channel.wxml-->
+<view class="content">
+  <view wx:for='{{obj.arr}}' wx:key='{{index}}' class="small" bindtap="goTo" data-name="{{item.name}}" data-gender="{{obj.gender}}">
+    <view class="name">{{item.name}}</view>
+    <view class="bookCount">{{item.bookCount}}本</view>
+  </view>
+</view>

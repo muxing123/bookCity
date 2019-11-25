@@ -1,0 +1,43 @@
+<!--pages/search/search.wxml-->
+<view class="outer">
+  <input bindinput="bindKeyInput" placeholder="输入书名或作者名" placeholder-class="place" class="search" bindconfirm="bindKeyConfirm" value="{{inputValue}}"/>
+  <icon type="search" size="{{21}}" class="icon-search" wx:if="{{inputValue === ''? true :false}}" />
+
+  <view wx:if="{{open}}">
+    <view class="top">
+      <view class="left">大家都在搜</view>
+      <view class="right" bindtap="gethotWord">
+        <image src="../../images/refresh-color.png" class="img"></image>
+        <text class="text">换一换</text>
+      </view>
+    </view>
+    <view class="hotWords">
+      <view wx:for="{{hotWords}}" wx:key="{{index}}" class="item" style="background-color:{{randomColorArr[index]}}" bindtap="setValue" data-value="{{item}}">
+        {{item}}
+      </view>
+    </view>
+    <view class="top">
+      <view class="left">搜索历史</view>
+      <view class="right" bindtap="del">
+        <icon type="cancel" size="{{20}}" class="cancel" />
+        <text class="text">清空</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="books" wx:else>
+    <scroll-view scroll-y="true" class="scrollset">
+      <view wx:for="{{books}}" wx:key="{{index}}" class="item" bindtap="goTo" data-id="{{item._id}}" data-title="{{item.title}}">
+        <image src="{{'https://statics.zhuishushenqi.com'+item.cover}}" class="cover"></image>
+        <view class="right">
+          <view class="title">{{item.title}}</view>
+          <view class="author">{{item.author}}</view>
+          <view class="shortIntro">{{item.shortIntro}}</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="history">
+    <view wx:for="{{historyList}}" wx:key="{{index}}" class="item" bindtap="setValue" data-value="{{item}}">{{item}}</view>
+  </view>
+</view>
